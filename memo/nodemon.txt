@@ -1,0 +1,15 @@
+NODE MON
+노드 서버 소스 변경시 다시 재시작해야 반영되는데
+그럴 필요없이 소스가 변경되면 알아서 재시작 해주는 모듈
+
+npm install nodeman --save-dev
+
+-dev는
+로컬에서 할떄, 배포할때 구분할 필요가 있기때문에
+로컬에서만 사용할것이기 때문에 -dev를 붙이는거다
+
+원래 안붙히면 기본 -dev상태임
+
+실제로 package.json에 가보면 devDependencies여기에 추가된다.
+
+그리고 실행할때 npm run index.js가 아닌 nodemin index.js로 서버를기동해야 한다.

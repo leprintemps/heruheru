@@ -1,0 +1,16 @@
+Working Directory   -(git add)->   Staging Area     -(git commit)->    Git repository(Local)    -(git push)->   Git repository(REMOTE)
+
+git status
+- 깃 상태 체크
+
+git commit -m "메시지"
+- 깃 커밋
+
+git add .
+- 깃을 스테이징 에어리어에 추가
+
+Git
+- 소스코드 관리 툴
+
+GIT GUB
+- 클라우드 서비스. 깃으로 관리한 소스코드를 깃허브에 올린뒤 깃허브에서 다양한 사람들과 공유,수정 등을 할 수 있도록 다양한 기능을 제공하는 클라우드 서비스

@@ -1,0 +1,22 @@
+깃허브에 소스코드를 커밋하려면 깃허브와 PC가 안전하게 통신해야하는데
+그러려면 SSH (Secure shell)이 필요하다.
+
+자세한 방법은 깃에 Connecting to GitHub with SSH 라는 검색어로 구글링한다.
+
+1. SSH가 설정되어있는지 확인하기
+ls -a ~/.ssh
+
+2. 없다면 키생성하기
+ssh-keygen -t ras -b 4096 -C "your_eamil@example.com"
+
+3. SSH를 백그라운드에서 실행시키기
+eval "$(ssh-agent -s)"
+
+4. SSH private 키 생성
+ssh-add -K ~/.ssh/id_rsa
+
+5. SSG키 public 키 를 클립보드에 복사
+pbcopy < ~/.ssh/id_rsa.pub
+
+6. 깃허브에 public 키 추가하기
+깃허브 > 설정 > SSH and GPG keys > public 키 추가
